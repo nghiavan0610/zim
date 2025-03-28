@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1250">
+<!--Background-->
+  <rect width="1000" height="1250" fill="#f8f9fa"/>
+<!--Title-->
+  <text x="500" y="30" font-family="Arial" font-size="24" text-anchor="middle" font-weight="bold">Cost-Optimized Video Course Platform Architecture</text>
+  <text x="500" y="60" font-family="Arial" font-size="16" text-anchor="middle">Multi-Region Deployment with Global Load Balancing</text>
+<!--Cloudflare Global Layer-->
+  <rect x="100" y="80" width="800" height="50" rx="5" ry="5" fill="#f78100" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="100" font-family="Arial" font-size="16" text-anchor="middle" fill="white">Cloudflare Global Network (DNS, CDN, DDoS Protection, Load Balancing)</text>
+    <text x="500" y="122" font-family="Arial" font-size="16" text-anchor="middle" fill="white">(Alternative: AWS CloudFront + Shield + WAF)</text>
+  
+<!--AWS Cloud And Multi-Region Infrastructure-->
+  <rect x="50" y="140" width="900" height="1050" rx="5" ry="5" fill="#eff8ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="165" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">AWS Cloud</text>
+  <text x="500" y="190" font-family="Arial" font-size="18" text-anchor="middle">(Multi-Region Infrastructure for global scale)</text>
+
+  <!--CI/CD Pipeline-->
+  <rect x="90" y="210" width="820" height="120" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="230" font-family="Arial" font-size="13" text-anchor="middle" font-weight="bold">Docker with CI/CD Pipeline (Multiple Options Available)</text>
+  
+  <rect x="105" y="240" width="120" height="75" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="165" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Gitlab</text>
+  <text x="165" y="275" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Gitlab CICD)</text>
+  
+  <rect x="240" y="240" width="120" height="75" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="300" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Github</text>
+  <text x="300" y="275" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Github Action)</text>
+  
+  <rect x="375" y="240" width="120" height="75" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="435" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Bitbucket</text>
+  <text x="435" y="275" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Bitbucket Pipeline)</text>
+  
+  <rect x="510" y="240" width="120" height="75" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="570" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">ArgoCD</text>
+  <text x="570" y="275" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Optional)</text>
+  <text x="570" y="290" font-family="Arial" font-size="8" text-anchor="middle" fill="white">fully automated rollback</text>
+  
+  <rect x="645" y="240" width="120" height="75" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="705" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Harbor</text>
+  <text x="705" y="275" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Optional)</text>
+  <text x="705" y="290" font-family="Arial" font-size="8" text-anchor="middle" fill="white">secure, private</text>
+  <text x="705" y="305" font-family="Arial" font-size="8" text-anchor="middle" fill="white">container registry</text>
+
+    <rect x="780" y="240" width="120" height="75" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="840" y="260" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Alternative</text>
+  <text x="840" y="275" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(AWS ECR)</text>
+  <text x="840" y="290" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(AWS Codepipeline)</text>
+  
+<!--Network Security Layer-->
+  <rect x="90" y="340" width="820" height="70" rx="5" ry="5" fill="#eaac44" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="370" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Network Security</text>
+  
+  <rect x="175" y="385" width="150" height="20" rx="5" ry="5" fill="#eaac44" stroke="#232f3e" stroke-width="1"/>
+  <text x="250" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Self-Hosted NGINX WAF</text>
+  <rect x="335" y="385" width="150" height="20" rx="5" ry="5" fill="#eaac44" stroke="#232f3e" stroke-width="1"/>
+  <text x="410" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Route 53 (Optional)</text>
+  <rect x="495" y="385" width="150" height="20" rx="5" ry="5" fill="#eaac44" stroke="#232f3e" stroke-width="1"/>
+  <text x="570" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="white">VPN/Tunnel (Optional)</text>
+  <rect x="655" y="385" width="150" height="20" rx="5" ry="5" fill="#eaac44" stroke="#232f3e" stroke-width="1"/>
+  <text x="730" y="400" font-family="Arial" font-size="12" text-anchor="middle" fill="white">Security Groups Only</text>
+  
+<!--AWS IAM & Account Management -->
+  <rect x="90" y="420" width="820" height="70" rx="5" ry="5" fill="#97dcfc" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="445" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AWS IAM - Access Control</text>
+  <rect x="175" y="460" width="200" height="20" rx="5" ry="5" fill="#97dcfc" stroke="#232f3e" stroke-width="1"/>
+  <text x="275" y="475" font-family="Arial" font-size="12" text-anchor="middle">Minimal IAM Roles</text>
+  <rect x="385" y="460" width="200" height="20" rx="5" ry="5" fill="#97dcfc" stroke="#232f3e" stroke-width="1"/>
+  <text x="485" y="475" font-family="Arial" font-size="12" text-anchor="middle">CloudTrail (Optional)</text>
+
+    <rect x="595" y="460" width="200" height="20" rx="5" ry="5" fill="#97dcfc" stroke="#232f3e" stroke-width="1"/>
+  <text x="695" y="475" font-family="Arial" font-size="12" text-anchor="middle">Alternative: Keycloack/OpenLDAP</text>
+  
+<!--VPC Architecture -->
+  <rect x="90" y="500" width="820" height="70" rx="5" ry="5" fill="#b5e8f7" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="525" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">VPC Architecture (Multi-AZ when traffic grows)</text>
+  <rect x="175" y="540" width="200" height="20" rx="5" ry="5" fill="#b5e8f7" stroke="#232f3e" stroke-width="1"/>
+  <text x="275" y="555" font-family="Arial" font-size="12" text-anchor="middle">Public + Private Subnets</text>
+  <rect x="385" y="540" width="200" height="20" rx="5" ry="5" fill="#b5e8f7" stroke="#232f3e" stroke-width="1"/>
+  <text x="485" y="555" font-family="Arial" font-size="12" text-anchor="middle">NAT Gateway</text>
+  <rect x="595" y="540" width="200" height="20" rx="5" ry="5" fill="#b5e8f7" stroke="#232f3e" stroke-width="1"/>
+  <text x="695" y="555" font-family="Arial" font-size="12" text-anchor="middle">Security Groups (No NACL)</text>
+  
+<!--Compute Infrastructure-->
+  <rect x="90" y="580" width="820" height="425" rx="10" ry="10" fill="#e1f0ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="600" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Compute Infrastructure</text>
+  <text x="500" y="620" font-family="Arial" font-size="16" text-anchor="middle">EBS: Root Volumes - 20GB/node</text>
+  
+<!--Kubernetes Cluster-->
+  <rect x="110" y="630" width="780" height="370" rx="5" ry="5" fill="#eaf7ff" stroke="#3b48cc" stroke-width="1" stroke-dasharray="5,2"/>
+  <text x="500" y="650" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Self-managed Kubernetes with Rancher - Multi-Cluster Kubernetes (Production, Staging, Dev)</text>
+  <text x="500" y="670" font-family="Arial" font-size="14" text-anchor="middle">(Alternative: EKS, ECS)</text>
+  
+<!--Ingress-->
+  <rect x="130" y="680" width="740" height="30" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="700" font-family="Arial" font-size="13" text-anchor="middle" fill="white" font-weight="bold">HAProxy/NGINX Ingress Controller</text>
+<!--Microservices-->
+  <rect x="130" y="720" width="740" height="125" rx="5" ry="5" fill="#eaf7ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="740" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Microservices - Kubernetes HPA Deployments</text>
+
+<!--Service Boxes-->
+  <rect x="200" y="755" width="110" height="75" rx="5" ry="5" fill="#ff9900" stroke="#232f3e" stroke-width="1"/>
+  <text x="255" y="785" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">API Gateway</text>
+  <text x="255" y="800" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(API Gateway Service)</text>
+  
+  <rect x="360" y="755" width="110" height="75" rx="5" ry="5" fill="#ff9900" stroke="#232f3e" stroke-width="1"/>
+  <text x="415" y="785" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">User Service</text>
+  <text x="415" y="800" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Internal Built)</text>
+    <text x="415" y="815" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(AWS Cognito)</text>
+  
+  <rect x="530" y="755" width="110" height="75" rx="5" ry="5" fill="#ff9900" stroke="#232f3e" stroke-width="1"/>
+  <text x="585" y="785" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">WebSocket</text>
+
+  <rect x="690" y="755" width="110" height="75" rx="5" ry="5" fill="#ff9900" stroke="#232f3e" stroke-width="1"/>
+  <text x="745" y="785" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Video Streaming</text>
+  <text x="745" y="800" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(AWS Media Service)</text>
+  <text x="745" y="815" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Bunny)</text>
+  
+<!--Data Services-->
+  <rect x="130" y="860" width="740" height="125" rx="5" ry="5" fill="#eaf7ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="880" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Data Services</text>
+<!--Data Service Boxes-->
+  <rect x="150" y="895" width="140" height="75" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="225" y="915" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">NoSQL Cluster</text>
+  <text x="220" y="930" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(MongoDB, ScyllaDB, DynamoDB)</text>
+  <text x="225" y="945" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Replica Set Mode</text>
+  <text x="225" y="960" font-family="Arial" font-size="7" text-anchor="middle" fill="white">(EBS: 100GB/node)</text>
+
+  
+  <rect x="305" y="895" width="130" height="75" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="370" y="915" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">RDS Cluster</text>
+  <text x="370" y="930" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(PostgreSQL)</text>
+  <text x="370" y="945" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Master Slave Replication</text>
+    <text x="370" y="960" font-family="Arial" font-size="7" text-anchor="middle" fill="white">(EBS: Managed by AWS)</text>
+
+  <rect x="450" y="895" width="130" height="75" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="515" y="915" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Caching</text>
+  <text x="515" y="930" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Redis)</text>
+  <text x="515" y="945" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Replication</text>
+  
+  <rect x="590" y="895" width="130" height="75" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="655" y="915" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Object Storage</text>
+  <text x="655" y="930" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(R2, S3, MinIO)</text>
+  <rect x="730" y="895" width="130" height="75" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="795" y="915" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Message Broker</text>
+  <text x="795" y="930" font-family="Arial" font-size="8" text-anchor="middle" fill="white">(Kafka, RabbitMQ)</text>
+  <text x="795" y="945" font-family="Arial" font-size="8" text-anchor="middle" fill="white">Multi-DC Replication</text>
+  
+<!--Monitoring & Observability (Simplified)-->
+  <rect x="90" y="1000" width="820" height="145" rx="5" ry="5" fill="#47abe8" stroke="#232f3e" stroke-width="1"/>
+  <text x="500" y="1020" font-family="Arial" font-size="12" text-anchor="middle" font-weight="bold">Monitoring - Observability (Alternative: Cloudwatch, X-Ray)</text>
+<!--Metrics Stack-->
+  <rect x="150" y="1035" width="190" height="95" rx="5" ry="5" fill="#8c52ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="245" y="1055" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Metrics Stack</text>
+  <rect x="160" y="1065" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="200" y="1080" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Grafana</text>
+  <rect x="250" y="1065" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="290" y="1080" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Prometheus</text>
+  <rect x="160" y="1095" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="200" y="1110" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Thanos</text>
+<!--Logging and Tracing Stack-->
+  <rect x="410" y="1035" width="190" height="95" rx="5" ry="5" fill="#8c52ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="510" y="1055" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Logging/Tracing Stack</text>
+  <rect x="420" y="1065" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="460" y="1080" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">OpenTelemetry</text>
+  <rect x="510" y="1065" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="550" y="1080" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Jaeger</text>
+  <rect x="420" y="1095" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="460" y="1110" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Loki</text>
+<!--Error Tracking-->
+  <rect x="660" y="1035" width="190" height="95" rx="5" ry="5" fill="#8c52ff" stroke="#232f3e" stroke-width="1"/>
+  <text x="760" y="1055" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Error Tracking</text>
+  <rect x="670" y="1065" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="710" y="1080" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Sentry</text>
+  <rect x="760" y="1065" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="800" y="1080" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Telegram</text>
+  <rect x="670" y="1095" width="80" height="25" rx="3" ry="3" fill="#4b32c3" stroke="#232f3e" stroke-width="1"/>
+  <text x="710" y="1110" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Slack</text>
+
+    <!-- Disaster Recovery -->
+  <rect x="90" y="1160" width="820" height="60" rx="5" ry="5" fill="#dd4b39" stroke="#232f3e" stroke-width="1" />
+  <text x="500" y="1180" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Disaster Recovery</text>
+  
+  <rect x="150" y="1190" width="220" height="20" rx="3" ry="3" fill="#b33c2d" stroke="#232f3e" stroke-width="1" />
+  <text x="260" y="1205" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Self-Managed Backups (S3)</text>
+  
+  <rect x="380" y="1190" width="220" height="20" rx="3" ry="3" fill="#b33c2d" stroke="#232f3e" stroke-width="1" />
+  <text x="490" y="1205" font-family="Arial" font-size="10" text-anchor="middle" fill="white">S3 Lifecycle Rules</text>
+  
+  <rect x="610" y="1190" width="220" height="20" rx="3" ry="3" fill="#b33c2d" stroke="#232f3e" stroke-width="1" />
+  <text x="720" y="1205" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Manual Failover Procedure</text>
+  
+</svg>
